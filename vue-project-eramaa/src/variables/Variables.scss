@@ -1,0 +1,61 @@
+// Colors
+ // Primary
+ $Black: #000000;
+ $White: #FFFFFF;
+
+ // Secondary
+ $Yellow: #FFD237;
+ $Green: #053732;
+ $Blue: #B4E6E6;
+
+
+// Fonts
+ // Headings
+ $PPMori-SemiBold: 'PPMori-SemiBold';
+
+ @font-face {
+    font-family: $PPMori-SemiBold;
+    src: url('/public/Font/Pealkirjad/PPMori-SemiBold.woff') format('woff');
+}
+
+ // Texts, buttons
+ $DMSans-Bold: 'DMSans-Bold';
+ $DMSans-BoldItalic: 'DMSans-BoldItalic';
+ $DMSans-Italic: 'DMSans-Italic';
+ $DMSans-Medium: 'DMSans-Medium';
+ $DMSans-MediumItalic: 'DMSans-MediumItalic';
+ $DMSans-Regular: 'DMSans-Regular';
+
+ @font-face {
+    font-family: $DMSans-Bold;
+    src: url('/public/Font/SisutekstNupud/DMSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: $DMSans-BoldItalic;
+    src: url('/public/Font/SisutekstNupud/DMSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: $DMSans-Italic;
+    src: url('/public/Font/SisutekstNupud/DMSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: $DMSans-Medium;
+    src: url('/public/Font/SisutekstNupud/DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: $DMSans-MediumItalic;
+    src: url('/public/Font/SisutekstNupud/DMSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: $DMSans-Regular;
+    src: url('/public/Font/SisutekstNupud/DMSans-Regular.ttf') format('truetype');
+}
+
+
+
+
