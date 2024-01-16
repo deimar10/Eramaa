@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "artplayer": "^5.1.1",
     "sass": "^1.69.7",
     "vue": "^3.3.11"
   },

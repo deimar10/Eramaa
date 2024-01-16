@@ -1,2 +1,94 @@
 @import '../variables/Variables.scss';
 
+body {
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.banner-wrapper {
+    position: relative;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.filter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.37);
+}
+
+.banner-container {
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    width: 100%;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.banner-item-left {
+    padding-left: 100px;
+    
+    span {
+        color: $Yellow;
+    }
+
+    h2 {
+        font-family: $PPMori-SemiBold;
+        line-height: 80px;
+        font-size: 76px;
+        color: $White;
+    }
+
+    p {
+        color: $White;
+        font-family: $DMSans-Regular;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.banner-footer-layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 150px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.layout-item {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &:nth-child(2) {
+        border-left: 1px solid $StrokeGrey;
+        border-right: 1px solid $StrokeGrey; 
+    }
+
+    h3 {
+        color: $Yellow;
+        font-family: $PPMori-SemiBold;
+    }
+
+    p {
+        color: $White;
+        font-family: $DMSans-Regular;
+    }
+}
+
+
+
+
