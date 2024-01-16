@@ -1,0 +1,59 @@
+@import '../variables/Variables.scss';
+
+.nav-main-container {
+    position: absolute;
+    width: 100%;
+    top: 2.5%;
+    z-index: 2;
+    padding-left: 100px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.nav-image-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+li a {
+  display: block;
+  color: $White;
+  font-family: $DMSans-Regular;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#offer {
+  border-radius: 36px;
+  color: $Black;
+  background-color: $Yellow;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+li #lang {
+  border-radius: 36px;
+  border: 2px solid $White;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  padding: 13px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+  

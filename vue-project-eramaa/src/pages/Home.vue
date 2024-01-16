@@ -1,6 +1,7 @@
 <template>
     <div class="main-container">
         <div class="banner-wrapper">
+            <Navbar/>
             <div class="filter-overlay"></div>
                 <video ref="videoPlayer" style="height: 1920; width: 1080;">
                     <source :src="videoSource" type="video/mp4" />
@@ -36,9 +37,13 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue';
 
 export default {
     name: 'Home',
+    components: {
+        Navbar
+    },
     data() {
         return {
             videoSource: '/Videos/-baa4-41f9-8812-4d63432e65f9.mp4'
