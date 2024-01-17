@@ -3,18 +3,21 @@
         <div class="banner-wrapper">
             <Navbar/>
             <div class="filter-overlay"></div>
-                <video ref="videoPlayer" style="height: 1920; width: 1080;">
+                <video ref="videoPlayer" style="height: 100vh; width: 100%; object-fit: cover;">
                     <source :src="videoSource" type="video/mp4" />
                 </video>
             <div class="banner-container">
                 <div class="grid-wrapper">
                     <div class="banner-item-left">
                         <h2><span>Sinu partner </span>põllu- ja metsamajandamisel</h2>
-                        <p>Majandame Eesti metsi vastutustundlikult ning lisame kasutamata põldudele väärtust.
-                        Järeltulevatele põlvedele jätame jätkusuutlikudmetsad ja põllumaad.
-                        </p>
+                        <div class="paragraph-wrapper">
+                            <p>Majandame Eesti metsi vastutustundlikult ning lisame kasutamata põldudele väärtust.
+                            Järeltulevatele põlvedele jätame jätkusuutlikudmetsad ja põllumaad.
+                            </p>
+                        </div>
                     </div>
                     <div class="banner-item-right">
+                        <img src="/Images/gif.gif">
                     </div>
                 </div>
                 <div class="banner-footer-layout">

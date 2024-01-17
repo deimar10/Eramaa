@@ -9,6 +9,7 @@ body {
 
 .banner-wrapper {
     position: relative;
+    height: 100vh;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -32,7 +33,7 @@ body {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
 }
 
 .banner-item-left {
@@ -58,10 +59,27 @@ body {
     }
 }
 
+.paragraph-wrapper {
+    margin-left: 60px;
+    width: 520px;
+    height: 84px;
+}
+
+.banner-item-right { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 575.534px;
+        height: 480px;
+        flex-shrink: 0;
+    }
+}
+
 .banner-footer-layout {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
