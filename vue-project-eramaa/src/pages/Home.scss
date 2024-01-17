@@ -188,7 +188,12 @@ body {
                 font-family: $DMSans-Regular;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 20px
+                line-height: 20px;
+                &:hover {
+                    background-color: $Green;
+                    color: $Yellow;
+                    cursor: pointer;
+                }
             }
         }
     }
