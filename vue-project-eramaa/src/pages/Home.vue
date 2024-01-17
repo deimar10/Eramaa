@@ -36,6 +36,46 @@
                 </div>
             </div>
         </div>
+        <div class="services-main-container">
+            <div class="grid-container">
+                <div class="services-grid-item">
+                    <img src="/Images/red-zeppelin-BPoCgY-I4gk-unsplash.png">
+                    <div class="services-heading">
+                        <h4>Metsamaa ost</h4>
+                    </div>
+                </div>
+                <div class="services-grid-item">
+                    <img src="/Images/red-zeppelin-wK8FotlDnrc-unsplash.png">
+                    <div class="services-heading">
+                        <h4>Põllumaa ost</h4>
+                    </div>
+                </div>
+                <div class="services-grid-item">
+                    <img src="/Images/pexels-karolina-grabowska-4206049.png">
+                    <div class="services-heading">
+                        <h4>Raieõiguse ost</h4>
+                    </div>
+                </div>  
+                <div class="services-grid-item">
+                    <img src="/Images/marina-reich-HYZLZYJfkIk-unsplash.png">
+                    <div class="services-heading">
+                        <h4>Metsa ülestöötamine ja hooldus</h4>
+                    </div>
+                </div>
+                <div class="services-grid-item">
+                    <img src="/Images/close-up-park-ranger-woods.png">
+                    <div class="services-heading">
+                        <h4>Metsamajanduse kavad</h4>
+                    </div>
+                </div>  
+                <div class="services-grid-item">
+                    <img src="/Images/image 202.png">
+                    <div class="services-heading">
+                        <h4>Tutvu tööprotsessidega</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

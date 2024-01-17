@@ -107,6 +107,42 @@ body {
     }
 }
 
+.services-main-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.services-grid-item {
+    position: relative;
+    width: 554px;
+    height: 415px;
+}
+
+.services-heading {
+    position: absolute;
+    bottom: 0;
+    padding-left: 40px;
+
+    h4 {
+        font-size: 24px;
+        font-family: $PPMori-SemiBold;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; 
+        letter-spacing: 0.48px;
+        color: $White;
+    }
+}
 
 
 
