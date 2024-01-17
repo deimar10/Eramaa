@@ -99,6 +99,17 @@
                 </div>
             </div>
         </div>
+        <div class="join-main-container">
+            <video ref="videoPlayer3" style="height: 100vh; width: 100%; object-fit: cover;" loop>
+                <source :src="videoSource3" type="video/mp4" />
+            </video>
+            <div class="join-description-container">
+                <h2>Liitu meie tiimiga</h2>
+                <p>Ootame oma kogenud meeskonda hakkajat uut liiget, kes väärtustab Eesti metsi ja tunneb huvi heast metsamajandamisest.</p>
+                <p>Kiire areng, huvitavad väljakutsed ja tugev kogukong on märksõnad, mis iseloomustavad Eramaa tänast päeva.</p>
+                <button>Vaata tööpakkumisi</button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -115,13 +126,15 @@ export default {
     data() {
         return {
             videoSource1: '/Videos/-baa4-41f9-8812-4d63432e65f9.mp4',
-            videoSource2: '/Videos/-fda1-488f-a0ef-57e82335a397.mp4'
+            videoSource2: '/Videos/-fda1-488f-a0ef-57e82335a397.mp4',
+            videoSource3: '/Videos/-bc85-4273-9abf-c2327b7790c8.mp4'
         };
     },
 
     mounted() {
         this.$refs.videoPlayer.addEventListener('loadedmetadata', this.playVideo);
         this.$refs.videoPlayer2.addEventListener('loadedmetadata', this.playVideo2);
+        this.$refs.videoPlayer3.addEventListener('loadedmetadata', this.playVideo3);
     },
     methods: {
         playVideo() {
@@ -129,6 +142,9 @@ export default {
         },
         playVideo2() {
             this.$refs.videoPlayer2.play();
+        },
+        playVideo3() {
+            this.$refs.videoPlayer3.play();
         },
     }
 }
