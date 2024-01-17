@@ -76,16 +76,19 @@
                 </div>
             </div>
         </div>
+        <Stats/>
     </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar.vue';
+import Stats from '../components/Stats.vue';
 
 export default {
     name: 'Home',
     components: {
-        Navbar
+        Navbar,
+        Stats
     },
     data() {
         return {

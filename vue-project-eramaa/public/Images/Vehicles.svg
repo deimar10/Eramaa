@@ -1,0 +1,12 @@
+<svg width="108" height="120" viewBox="0 0 108 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vehicles">
+<path id="Vector" d="M23 75V75.05" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group 51251">
+<path id="Vector_2" d="M3 75C3 80.3043 5.10714 85.3914 8.85786 89.1421C12.6086 92.8929 17.6957 95 23 95C28.3043 95 33.3914 92.8929 37.1421 89.1421C40.8929 85.3914 43 80.3043 43 75C43 69.6957 40.8929 64.6086 37.1421 60.8579C33.3914 57.1071 28.3043 55 23 55C17.6957 55 12.6086 57.1071 8.85786 60.8579C5.10714 64.6086 3 69.6957 3 75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M73 85C73 87.6522 74.0536 90.1957 75.9289 92.0711C77.8043 93.9464 80.3478 95 83 95C85.6522 95 88.1957 93.9464 90.0711 92.0711C91.9464 90.1957 93 87.6522 93 85C93 82.3478 91.9464 79.8043 90.0711 77.9289C88.1957 76.0536 85.6522 75 83 75C80.3478 75 77.8043 76.0536 75.9289 77.9289C74.0536 79.8043 73 82.3478 73 85Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M40.5 85H73" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M88 76V55C88 53.6739 87.4732 52.4021 86.5355 51.4645C85.5979 50.5268 84.3261 50 83 50H53L43 25H13V57.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M78 25H73C71.6739 25 70.4021 25.5268 69.4645 26.4645C68.5268 27.4021 68 28.6739 68 30V50" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

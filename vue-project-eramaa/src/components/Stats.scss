@@ -1,0 +1,109 @@
+@import '../variables/Variables.scss';
+
+.stats-main-container {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stats-grid-container {
+    display: grid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 99%;
+    grid-template-columns: 0.6fr 0fr 0.22fr; 
+    grid-template-areas:
+      'menu main main main right right'
+      'menu mainsec mainsec mainsec rightsec rightsec'
+      'footer mainsec mainsec mainsec rightsec rightsec';
+    gap: 10px;
+    padding: 10px;
+    color: $White;
+    div {
+        background-color: transparent;
+        border: 1px solid $StrokeGrey;
+        padding-left: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+    p {
+        font-family: $DMSans-Regular;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        color: $Yellow;
+    }
+}
+  
+.item1 { 
+    grid-area: menu;
+    h4 {
+        font-family: $PPMori-SemiBold;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 58px; 
+        letter-spacing: 1.04px;
+        text-align: center;
+        width: 520px;
+        height: 116px;
+        margin: 0 auto;
+        margin-top: 22%;
+    }
+}
+.item2 { 
+    grid-area: main;
+}
+.item3 { 
+    grid-area: mainsec;
+}
+.item4 { 
+    grid-area: right;
+}
+.item5 { 
+    grid-area: rightsec;
+}
+.item6 { 
+    grid-area: footer;
+    &:nth-child(6) #stats-detail-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+     }
+}
+
+#stats-detail-wrapper {
+    margin-top: 25%;
+    height: 210px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h4 {
+        font-family: $PPMori-SemiBold;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 1.04px;
+        margin-top: 0px;
+    }
+    #stats-detail-wrapper-left {
+        border: none;
+    }
+    #stats-detail-wrapper-right {
+        border: none;
+        h4 {
+            font-size: 93px;
+            line-height: 80px;
+            letter-spacing: 1.86px;
+        }
+    }
+}
