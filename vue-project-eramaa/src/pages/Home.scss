@@ -144,5 +144,55 @@ body {
     }
 }
 
+.about-main-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+    .about-grid-item {
+        display: flex;
+        align-items: center;
+        .about-description-container {
+            width: 845px;
+            height: 304px;
+            h2 {
+                font-size: 52px;
+                font-family: $PPMori-SemiBold;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 58px;
+                letter-spacing: 1.04px;
+            }
+            p {
+                font-size: 20px;
+                font-family: $DMSans-Regular;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; 
+            }
+            button {
+                border-radius: 36px;
+                background-color: $Yellow;
+                color: $Black;
+                border: none;
+                font-size: 20px;
+                padding: 13px 24px;
+                font-family: $DMSans-Regular;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px
+            }
+        }
+    }
+}
+
 
 
