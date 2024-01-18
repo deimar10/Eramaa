@@ -38,61 +38,13 @@
         </div>
         <div class="services-main-container" ref="servicesMainContainer">
             <div class="grid-container">
-                <div class="services-grid-item">
+                <div class="services-grid-item" v-for="data in serviceData" :key="data.title">
                     <div class="services-filter-overlay"></div>
-                    <img src="/Images/red-zeppelin-BPoCgY-I4gk-unsplash.png">
+                    <img :src="data.image" />
                     <div class="services-heading">
-                        <h4>Metsamaa ost</h4>
-                    </div>
-                    <div class="service-hover-container">
-                        <img src="/Images/Group 51154.svg">
-                    </div>
-                </div>
-                <div class="services-grid-item">
-                    <div class="services-filter-overlay"></div>
-                    <img src="/Images/red-zeppelin-wK8FotlDnrc-unsplash.png">
-                    <div class="services-heading">
-                        <h4>Põllumaa ost</h4>
-                    </div>
-                    <div class="service-hover-container">
-                        <img src="/Images/Group 51154.svg">
-                    </div>
-                </div>
-                <div class="services-grid-item">
-                    <div class="services-filter-overlay"></div>
-                    <img src="/Images/pexels-karolina-grabowska-4206049.png">
-                    <div class="services-heading">
-                        <h4>Raieõiguse ost</h4>
-                    </div>
-                    <div class="service-hover-container">
-                        <img src="/Images/Group 51154.svg">
-                    </div>
-                </div>  
-                <div class="services-grid-item">
-                    <div class="services-filter-overlay"></div>
-                    <img src="/Images/marina-reich-HYZLZYJfkIk-unsplash.png">
-                    <div class="services-heading">
-                        <h4>Metsa ülestöötamine ja hooldus</h4>
-                    </div>
-                    <div class="service-hover-container">
-                        <img src="/Images/Group 51154.svg">
-                    </div>
-                </div>
-                <div class="services-grid-item">
-                    <div class="services-filter-overlay"></div>
-                    <img src="/Images/close-up-park-ranger-woods.png">
-                    <div class="services-heading">
-                        <h4>Metsamajanduse kavad</h4>
-                    </div>
-                    <div class="service-hover-container">
-                        <img src="/Images/Group 51154.svg">
-                    </div>
-                </div>  
-                <div class="services-grid-item">
-                    <div class="services-filter-overlay"></div>
-                    <img src="/Images/image 202.png">
-                    <div class="services-heading">
-                        <h4>Tutvu tööprotsessidega</h4>
+                        <h4>
+                            {{ data.title }}
+                        </h4>
                     </div>
                     <div class="service-hover-container">
                         <img src="/Images/Group 51154.svg">
@@ -145,6 +97,7 @@
 import Navbar from '../components/Navbar.vue';
 import Stats from '../components/Stats.vue';
 import MainFooter from '../components/Footer.vue';
+import Data from '../data.json';
 
 export default {
     name: 'Home',
@@ -159,6 +112,7 @@ export default {
             videoSource2: '/Videos/-fda1-488f-a0ef-57e82335a397.mp4',
             videoSource3: '/Videos/-bc85-4273-9abf-c2327b7790c8.mp4',
             isSticky: false,
+            serviceData: Data,
         };
     },
 

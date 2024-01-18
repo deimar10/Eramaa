@@ -1,31 +1,31 @@
 [
     {
         "title": "Metsamaa ost",
-        "image": "./images/icon-work.svg",
+        "image": "/Images/red-zeppelin-BPoCgY-I4gk-unsplash.png",
         "text": "Kui soovid müüa metsamaad, pakume Sulle head ja õiglast hinda. Ostame igasugust metsa kogu Eestis. Kui Sul pole juhtumisi aega, teadmisi või vahendeid, et oma metsa hooldada, jääb sinu metsa väärtus kasutamata ja selle maksumus võib langeda. Müües meile oma metsamaad võid kindel olla, et hoolitseme selle eest hästi. Teeme hinnapakkumise igale metsale, olenemata selle asukohast, suurusest ja arengujärkudest."
     },
     {
         "title": "Põllumaa ost",
-        "image": "./images/icon-work.svg",
+        "image": "/Images/red-zeppelin-wK8FotlDnrc-unsplash.png",
         "text": "Soovid müüa põllumaad? Pakume Sulle põllumaa eest head ja õiglast hinda. Lisaks saad kiire teeninduse ja teadmise, et maa eest hoolitsetakse hästi. Oleme metsa- ja põllumaa ostuga tegelenud ligi kolm aastakümmet. Toimime keskkonda säästvalt ja lähtume seadustest ning eeskirjadest."
     },
     {
         "title": "Raieõiguse  ost",
-        "image": "./images/icon-work.svg",
+        "image": "/Images/pexels-karolina-grabowska-4206049.png",
         "text": "Metsaraiet tehakse puude kasvutingimuste parandamiseks ja küpsest metsast puidu varumiseks. Olenemata raie liigist on tavaliselt lõppeesmärgiks saada puidu müügist tulu. Kas oled mõelnud, millist raiet sinu mets parasjagu vajab ja kas sellelt on ka tulu loota?"
     }, 
     {
         "title": "Metsa ülestöötamine ja hooldus ",
-        "image": "./images/icon-work.svg",
+        "image": "/Images/marina-reich-HYZLZYJfkIk-unsplash.png",
         "text": "Oskuslik metsa majandamine tagab metsakinnistu jätkusuutlikkuse, tõstab metsamaa väärtust ning toob metsaomanikule suurima tulu. Metsamajanduse eeskirja põhjal jaguneb metsa majandamine neljaks. Metsa majandamise all mõistetakse selle uuendamist, kasvatamist, kasutamist ja kaitsmist."
     },
     {
         "title": "Metsamajanduse kavad ",
-        "image": "./images/icon-work.svg",
+        "image": "/Images/close-up-park-ranger-woods.png",
         "text": "Metsa hooldus on iga metsaomaniku kohustus. Meie hooldame ja uuendame sinu metsamaad selliselt, et see hakkab sulle tulu tootma. Pakume lisaks metsa ostule metsahooldust ja ülestöötamist. Meie ettevõte käsitleb kogu metsamajandamist tervikuna. Tellides metsahooldust, -uuendust või lageraiet meilt, pakume sulle ka täiendavaid teenuseid nagu metsamaterjali väljavedu, maapinna mineraliseerimine või uue metsa istutamine. Metsa ülestöötamine ja hooldus tõstavad puidu kvaliteeti ning kasvu kiirust. Tulevikus saad tulu loota üksnes õigesti majandatud metsast."
     },
     {
         "title": "Tutvu tööprotsessidega ",
-        "image": "./images/icon-work.svg"
+        "image": "/Images/image 202.png"
     } 
 ]
