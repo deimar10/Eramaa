@@ -1,9 +1,9 @@
 <template>
     <div class="main-container">
         <div class="banner-wrapper">
-            <Navbar/>
+            <Navbar :isSticky="isSticky"/>
             <div class="filter-overlay"></div>
-                <video ref="videoPlayer" style="height: 100vh; width: 100%; object-fit: cover;" loop>
+                <video ref="videoPlayer" muted style="height: 100vh; width: 100%; object-fit: cover;" loop>
                     <source :src="videoSource1" type="video/mp4" />
                 </video>
             <div class="banner-container">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="services-main-container">
+        <div class="services-main-container" ref="servicesMainContainer">
             <div class="grid-container">
                 <div class="services-grid-item">
                     <div class="services-filter-overlay"></div>
@@ -117,14 +117,14 @@
                     </div>
                 </div>
                 <div class="about-grid-item">
-                    <video ref="videoPlayer2" style="height: 788px; width: 845px; object-fit: cover;" loop>
+                    <video ref="videoPlayer2" muted style="height: 788px; width: 845px; object-fit: cover;" loop>
                         <source :src="videoSource2" type="video/mp4" />
                     </video>
                 </div>
             </div>
         </div>
         <div class="join-main-container">
-            <video ref="videoPlayer3" style="height: 100vh; width: 100%; object-fit: cover;" loop>
+            <video ref="videoPlayer3" muted style="height: 100vh; width: 100%; object-fit: cover;" loop>
                 <source :src="videoSource3" type="video/mp4" />
             </video>
             <div class="join-image-container">
@@ -157,11 +157,14 @@ export default {
         return {
             videoSource1: '/Videos/-baa4-41f9-8812-4d63432e65f9.mp4',
             videoSource2: '/Videos/-fda1-488f-a0ef-57e82335a397.mp4',
-            videoSource3: '/Videos/-bc85-4273-9abf-c2327b7790c8.mp4'
+            videoSource3: '/Videos/-bc85-4273-9abf-c2327b7790c8.mp4',
+            isSticky: false,
         };
     },
 
     mounted() {
+        window.addEventListener('scroll', this.handleScrollIntoView);
+
         this.$refs.videoPlayer.addEventListener('loadedmetadata', this.playVideo);
         this.$refs.videoPlayer2.addEventListener('loadedmetadata', this.playVideo2);
         this.$refs.videoPlayer3.addEventListener('loadedmetadata', this.playVideo3);
@@ -176,6 +179,20 @@ export default {
         playVideo3() {
             this.$refs.videoPlayer3.play();
         },
+        handleScrollIntoView() {
+           const targetElement = this.$refs.servicesMainContainer; 
+
+            if (targetElement) {
+                const rect = targetElement.getBoundingClientRect();
+
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    this.isSticky = false;
+                    this.$emit('scroll-into-view');
+                } else {
+                    this.isSticky = true;
+                }
+            }
+        }
     }
 }
 
