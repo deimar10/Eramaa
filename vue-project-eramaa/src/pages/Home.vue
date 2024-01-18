@@ -39,39 +39,63 @@
         <div class="services-main-container">
             <div class="grid-container">
                 <div class="services-grid-item">
+                    <div class="services-filter-overlay"></div>
                     <img src="/Images/red-zeppelin-BPoCgY-I4gk-unsplash.png">
                     <div class="services-heading">
                         <h4>Metsamaa ost</h4>
                     </div>
+                    <div class="service-hover-container">
+                        <img src="/Images/Group 51154.svg">
+                    </div>
                 </div>
                 <div class="services-grid-item">
+                    <div class="services-filter-overlay"></div>
                     <img src="/Images/red-zeppelin-wK8FotlDnrc-unsplash.png">
                     <div class="services-heading">
                         <h4>Põllumaa ost</h4>
                     </div>
+                    <div class="service-hover-container">
+                        <img src="/Images/Group 51154.svg">
+                    </div>
                 </div>
                 <div class="services-grid-item">
+                    <div class="services-filter-overlay"></div>
                     <img src="/Images/pexels-karolina-grabowska-4206049.png">
                     <div class="services-heading">
                         <h4>Raieõiguse ost</h4>
                     </div>
+                    <div class="service-hover-container">
+                        <img src="/Images/Group 51154.svg">
+                    </div>
                 </div>  
                 <div class="services-grid-item">
+                    <div class="services-filter-overlay"></div>
                     <img src="/Images/marina-reich-HYZLZYJfkIk-unsplash.png">
                     <div class="services-heading">
                         <h4>Metsa ülestöötamine ja hooldus</h4>
                     </div>
+                    <div class="service-hover-container">
+                        <img src="/Images/Group 51154.svg">
+                    </div>
                 </div>
                 <div class="services-grid-item">
+                    <div class="services-filter-overlay"></div>
                     <img src="/Images/close-up-park-ranger-woods.png">
                     <div class="services-heading">
                         <h4>Metsamajanduse kavad</h4>
                     </div>
+                    <div class="service-hover-container">
+                        <img src="/Images/Group 51154.svg">
+                    </div>
                 </div>  
                 <div class="services-grid-item">
+                    <div class="services-filter-overlay"></div>
                     <img src="/Images/image 202.png">
                     <div class="services-heading">
                         <h4>Tutvu tööprotsessidega</h4>
+                    </div>
+                    <div class="service-hover-container">
+                        <img src="/Images/Group 51154.svg">
                     </div>
                 </div>
             </div>
@@ -103,6 +127,9 @@
             <video ref="videoPlayer3" style="height: 100vh; width: 100%; object-fit: cover;" loop>
                 <source :src="videoSource3" type="video/mp4" />
             </video>
+            <div class="join-image-container">
+                <img src="/Images/CTA_Shape.png"> 
+            </div>
             <div class="join-description-container">
                 <h2>Liitu meie tiimiga</h2>
                 <p>Ootame oma kogenud meeskonda hakkajat uut liiget, kes väärtustab Eesti metsi ja tunneb huvi heast metsamajandamisest.</p>
