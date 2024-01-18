@@ -110,18 +110,21 @@
                 <button>Vaata tööpakkumisi</button>
             </div>
         </div>
+       <MainFooter/>
     </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar.vue';
 import Stats from '../components/Stats.vue';
+import MainFooter from '../components/Footer.vue';
 
 export default {
     name: 'Home',
     components: {
         Navbar,
-        Stats
+        Stats,
+        MainFooter
     },
     data() {
         return {

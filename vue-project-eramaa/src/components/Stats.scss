@@ -13,14 +13,12 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 99%;
+    width: 100%;
     grid-template-columns: 0.6fr 0fr 0.22fr; 
     grid-template-areas:
       'menu main main main right right'
       'menu mainsec mainsec mainsec rightsec rightsec'
       'footer mainsec mainsec mainsec rightsec rightsec';
-    gap: 10px;
-    padding: 10px;
     color: $White;
     div {
         background-color: transparent;
