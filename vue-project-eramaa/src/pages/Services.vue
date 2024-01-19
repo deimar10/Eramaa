@@ -64,7 +64,7 @@ export default {
         this.$refs.videoPlayer4.addEventListener('loadedmetadata', this.playVideo4);
     },
     methods: {
-        playVideo() {
+        playVideo4() {
             this.$refs.videoPlayer4.play();
         },
     }
