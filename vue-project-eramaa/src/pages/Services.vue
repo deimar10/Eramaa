@@ -26,6 +26,20 @@
             </div>
         </div>
     </div>
+    <div class="work-process-main-container">
+        <div class="services-filter-overlay"></div>
+            <video ref="videoPlayer4" muted style="height: 100vh; width: 100%; object-fit: cover;" loop>
+                <source :src="videoSource4" type="video/mp4" />
+            </video>
+            <div class="work-process-image-container">
+                <img src="/Images/CTA_Shape.png"> 
+            </div>
+            <div class="work-process-description-container">
+                <h2>Tööprotsessid</h2>
+                <p>Meie ettevõte Eramaa OÜ on Eestimaa metsa- ja põllumaid ostnud ning nende eest hoolitsenud juba ligemale kümme aastat. </p>
+                <button>Loe lähemalt</button>
+            </div>
+        </div>
 </template>
 
 <script>
@@ -40,7 +54,16 @@ export default {
     data() { 
         return {
             serviceData: Data,
+            videoSource4: '/Videos/-103b-4ba4-8dcc-65f0371dd0a8.mp4'
         }
+    },
+    mounted() {
+        this.$refs.videoPlayer4.addEventListener('loadedmetadata', this.playVideo4);
+    },
+    methods: {
+        playVideo() {
+            this.$refs.videoPlayer4.play();
+        },
     }
 }
 </script>
