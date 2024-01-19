@@ -44,9 +44,15 @@
         </div>
         <div class="footer-bottom-container">
             <div class="footer-bottom-left">
-                <p>Eramaa OÜ, Registrikood: 12602017</p>
-                <p>Kasulikud lingid</p>
-                <p>Privaatsuspoliitika</p>
+                <div id="bottom-left-wrapper">
+                    <p>Eramaa OÜ, Registrikood: 12602017</p>
+                </div>
+                <div id="bottom-left-wrapper">
+                    <p id="child2">Kasulikud lingid</p>
+                </div>
+                <div id="bottom-left-wrapper">
+                    <p id="child3">Privaatsuspoliitika</p>
+                </div>
             </div>
             <div class="footer-bottom-right">
                 <img src="/Images/Group 39464.svg" style="width: 148px; height: 50px;">

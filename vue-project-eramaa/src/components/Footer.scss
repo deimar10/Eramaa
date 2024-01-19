@@ -119,23 +119,29 @@
     .footer-bottom-left {
         width: 50%;
         display: flex;
-        gap: 60px;
-        padding-left: 80px;
+        gap: 40px;
+        padding-left: 60px;
         font-size: 20px;
         font-family: $DMSans-Medium;
         font-style: normal;
         font-weight: 500;
         line-height: 20px; 
         color: $Green;
-        p {
+        #bottom-left-wrapper {
             &:nth-child(2) {
-                text-decoration-line: underline;
-            }
-            &:nth-child(3) {
-                text-decoration-line: underline;
+                height: 50px;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-left: 1px solid $Green;
+                border-right: 1px solid $Green;
             }
         }
     }
+
+    #child2, #child3 {
+        text-decoration: underline;
+    }
+
     .footer-bottom-right {
         width: 50%;
         display: flex;
