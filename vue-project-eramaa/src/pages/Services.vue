@@ -40,16 +40,19 @@
                 <button>Loe lähemalt</button>
             </div>
         </div>
+        <MainFooter />
 </template>
 
 <script>
 import Navbar from '../components/Navbar.vue';
 import Data from '../data.json';
+import MainFooter from '../components/Footer.vue';
 
 export default {
     name: 'Services',
     components: {
         Navbar,
+        MainFooter
     },
     data() { 
         return {
