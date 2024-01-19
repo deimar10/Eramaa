@@ -12,7 +12,7 @@
                 <li><a>Maaomanikule</a></li>
                 <li><a>Kontakt</a></li>
                 <li><a id="offer">Küsi pakkumist</a></li>
-                <li><a id="lang">Eng</a></li>
+                <li><a id="lang">Eng<font-awesome-icon icon="chevron-down" /></a></li>
             </div>
         </ul>
     </div>
