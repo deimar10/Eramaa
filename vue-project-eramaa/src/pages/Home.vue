@@ -6,7 +6,7 @@
                 <video ref="videoPlayer" muted style="height: 100vh; width: 100%; object-fit: cover;" loop>
                     <source :src="videoSource1" type="video/mp4" />
                 </video>
-            <div class="banner-container">
+            <div class="banner-container" ref="stickyNavToggle">
                 <div class="grid-wrapper">
                     <div class="banner-item-left">s
                         <h2><span>Sinu partner </span>põllu- ja metsamajandamisel</h2>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="services-main-container" ref="servicesMainContainer">
+        <div class="services-main-container">
             <div class="grid-container">
                 <div class="services-grid-item" v-for="data in serviceData" :key="data.title">
                     <div class="services-filter-overlay"></div>
@@ -134,7 +134,7 @@ export default {
             this.$refs.videoPlayer3.play();
         },
         handleScrollIntoView() {
-           const targetElement = this.$refs.servicesMainContainer; 
+           const targetElement = this.$refs.stickyNavToggle; 
 
             if (targetElement) {
                 const rect = targetElement.getBoundingClientRect();
