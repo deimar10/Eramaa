@@ -1,7 +1,7 @@
 <template>
     <div class="services-banner-wrapper">
         <Navbar />
-        <div class="services-filter-overlay"></div>
+        <div class="services-banner-filter-overlay"></div>
             <img src="/Images/close-up-park-rangers-woods.png">
             <div class="services-banner-img-container">
                 <img src="/Images/variant 2.png"> 

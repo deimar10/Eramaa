@@ -6,27 +6,6 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.stats-grid-container {
-    display: grid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    grid-template-columns: 0.6fr 0fr 0.22fr; 
-    grid-template-areas:
-      'menu main main main right right'
-      'menu mainsec mainsec mainsec rightsec rightsec'
-      'footer mainsec mainsec mainsec rightsec rightsec';
-    color: $White;
-    div {
-        background-color: transparent;
-        border: 1px solid $StrokeGrey;
-        padding-left: 20px;
-        font-size: 30px;
-        text-align: left;
-    }
     p {
         font-family: $DMSans-Regular;
         font-size: 16px;
@@ -38,47 +17,80 @@
         color: $Yellow;
     }
 }
-  
-.item1 { 
-    grid-area: menu;
-    h4 {
-        font-family: $PPMori-SemiBold;
-        font-size: 52px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 58px; 
-        letter-spacing: 1.04px;
-        text-align: center;
-        width: 520px;
-        height: 116px;
-        margin: 0 auto;
-        margin-top: 22%;
+
+.stats-grid-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    color: $White;
+}
+
+.stas-left-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .stats-left-item {
+        border: 1px solid $StrokeGrey;
+        &:nth-child(1) {
+            padding-bottom: 300px;
+            border-left: none;
+        }
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 30px;
+            height: 100%;
+            width: 100%;
+            border-left: none;
+            border-top: none;
+        }
+        h4 {
+            font-family: $PPMori-SemiBold;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 58px; 
+            letter-spacing: 1.04px;
+            text-align: center;
+            width: 520px;
+            height: 116px;
+            margin: 0 auto;
+            margin-top: 22%;
+        }
     }
 }
-.item2 { 
-    grid-area: main;
+
+#stats-detail-wrapper-left {
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
 }
-.item3 { 
-    grid-area: mainsec;
-}
-.item4 { 
-    grid-area: right;
-}
-.item5 { 
-    grid-area: rightsec;
-}
-.item6 { 
-    grid-area: footer;
-    &:nth-child(6) #stats-detail-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-     }
+
+#stats-detail-wrapper-right {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+        text-align: start;
+        font-size: 93px;
+        line-height: 80px;
+        margin: 0;
+        padding-top: 10px;
+        letter-spacing: 1.86px;
+    }
 }
 
 #stats-detail-wrapper {
-    margin-top: 25%;
-    height: 210px;
+    margin: 0 auto;
+    margin-top: 35%;
+    width: 70%;
     border: none;
     display: flex;
     flex-direction: column;
@@ -89,19 +101,32 @@
         font-size: 52px;
         font-style: normal;
         font-weight: 600;
-        line-height: 58px;
+        line-height: 58px; 
         letter-spacing: 1.04px;
-        margin-top: 0px;
+        width: 520px;
+        height: 116px;
+        margin: 0 auto;
+        margin-top: 0;
     }
-    #stats-detail-wrapper-left {
-        border: none;
-    }
-    #stats-detail-wrapper-right {
-        border: none;
-        h4 {
-            font-size: 93px;
-            line-height: 80px;
-            letter-spacing: 1.86px;
+}
+
+.stats-right-container {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 50%;
+    .stats-right-item {
+        width: 49%;
+        border: 1px solid $StrokeGrey;
+        border-right: none;
+        &:nth-child(1) {
+            border-left: none;
+            border-bottom: none;
+        }
+        &:nth-child(2) {
+            border-bottom: none;
+        }
+        &:nth-child(3) {
+           border-left: none;
         }
     }
 }
