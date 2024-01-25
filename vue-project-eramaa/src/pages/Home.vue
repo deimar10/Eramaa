@@ -8,7 +8,7 @@
                 </video>
             <div class="banner-container" ref="stickyNavToggle">
                 <div class="grid-wrapper">
-                    <div class="banner-item-left">s
+                    <div class="banner-item-left">
                         <h2><span>Sinu partner </span>põllu- ja metsamajandamisel</h2>
                         <div class="paragraph-wrapper">
                             <p>Majandame Eesti metsi vastutustundlikult ning lisame kasutamata põldudele väärtust.
