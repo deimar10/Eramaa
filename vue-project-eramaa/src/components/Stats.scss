@@ -1,5 +1,19 @@
 @import '../variables/Variables.scss';
 
+@mixin statsHeadingStyles {
+    font-family: $PPMori-SemiBold;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px; 
+    letter-spacing: 1.04px;
+    text-align: center;
+    width: 520px;
+    height: 116px;
+    margin: 0 auto;
+    margin-top: 22%;
+}
+
 .stats-main-container {
     position: relative;
     height: 100vh;
@@ -50,17 +64,7 @@
             border-top: none;
         }
         h4 {
-            font-family: $PPMori-SemiBold;
-            font-size: 52px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 58px; 
-            letter-spacing: 1.04px;
-            text-align: center;
-            width: 520px;
-            height: 116px;
-            margin: 0 auto;
-            margin-top: 22%;
+            @include statsHeadingStyles;
         }
     }
 }
@@ -97,15 +101,8 @@
     justify-content: center;
     align-items: flex-start;
     h4 {
-        font-family: $PPMori-SemiBold;
-        font-size: 52px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 58px; 
-        letter-spacing: 1.04px;
-        width: 520px;
-        height: 116px;
-        margin: 0 auto;
+        @include statsHeadingStyles;
+        text-align: left;
         margin-top: 0;
     }
 }

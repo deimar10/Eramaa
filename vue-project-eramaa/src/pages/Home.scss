@@ -1,5 +1,41 @@
 @import '../variables/Variables.scss';
 
+@mixin headingStyles {
+    font-size: 52px;
+    font-family: $PPMori-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 1.04px;
+}
+
+@mixin paragraphStyles {
+    color: $White;
+    font-family: $DMSans-Regular;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+}
+
+@mixin sharedButtonStyles {
+    border-radius: 36px;
+    background-color: $Yellow;
+    color: $Black;
+    border: none;
+    font-size: 20px;
+    padding: 13px 24px;
+    font-family: $DMSans-Medium;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+        &:hover {
+            background-color: $Green;
+            color: $Yellow;
+            cursor: pointer;
+        }
+}
+
 body {
     margin: 0;
     height: 100%;
@@ -48,11 +84,7 @@ body {
         color: $White;
     }
     p {
-        color: $White;
-        font-family: $DMSans-Regular;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 28px;
+        @include paragraphStyles;
     }
 }
 
@@ -180,36 +212,14 @@ body {
             width: 845px;
             height: 304px;
             h2 {
-                font-size: 52px;
-                font-family: $PPMori-SemiBold;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 58px;
-                letter-spacing: 1.04px;
+                @include headingStyles;
             }
             p {
-                font-size: 20px;
-                font-family: $DMSans-Regular;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px; 
+                @include paragraphStyles;
+                color: $Black;
             }
             button {
-                border-radius: 36px;
-                background-color: $Yellow;
-                color: $Black;
-                border: none;
-                font-size: 20px;
-                padding: 13px 24px;
-                font-family: $DMSans-Medium;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 20px;
-                &:hover {
-                    background-color: $Green;
-                    color: $Yellow;
-                    cursor: pointer;
-                }
+               @include sharedButtonStyles;
             }
         }
     }
@@ -236,40 +246,15 @@ body {
     height: 276px;
     padding-left: 100px;
     h2 {
-        font-size: 52px;
-        font-family: $PPMori-SemiBold;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 58px; 
-        letter-spacing: 1.04px;
+        @include headingStyles;
         color: $Yellow;
     }
     p {
-        font-size: 20px;
-        font-family: $DMSans-Regular;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px; 
-        color: $White;
+        @include paragraphStyles;
     }
     button {
-        border-radius: 36px;
-        background-color: $Yellow;
-        color: $Black;
-        border: none;
-        font-size: 20px;
-        padding: 13px 24px;
-        font-family: $DMSans-Regular;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-        &:hover {
-            background-color: transparent;
-            color: $White;
-            border: 2px solid $White;
-            cursor: pointer;
-        }
-    }
+        @include sharedButtonStyles;
+     }
 }
 
 
